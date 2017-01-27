@@ -6,46 +6,102 @@ todo o trabalho, devendo constar a delimitação do assunto tratado, objetivos d
 pesquisa, motivação para o desenvolvimento da mesma e outros elementos
 necessários para situar o tema do trabalho.
 
+Atualmente o ensino de programação e robótica voltado aos jovens e crianças vêm
+ganhando espaço em praticamente todo o mundo, por outro lado existe a fama da
+alta complexidade envolvida com esses dois assuntos. Por causa dessa alta
+complexidade nasceu uma grande necessidade pela criação de metodologias e
+estratégias mais eficientes para um ensino de programação e também de robótica.
+Nesse meio de busca de novas estratégias de ensino de programação, nasceu a
+programação tangível que busca contornar os problemas da alta complexidade
+ligada à informática, com o príncio de modificar a forma de programar que
+normalmente é usando recursos virutais e intocáveis, por objetos que podem ser
+tocados e vistos no mundo real.
+
+Seguindo o princípio da programação tangível, a Google criou uma platarforma
+que inclui um projeto que possibilita a criação de programas através da
+combinação de pequenos módulos no formato de blocos que se encaixam, onde cada
+bloco tem um comportamento especifico e podem ser combinados de diversas formas
+produzindo novos comportamentos mais complexos, esse projeto foi nomeado de
+Project Bloks. Dentro dessa mesma plataforma existe também um pequeno robô que
+consegue produzir desenhos usando uma caneta, esse robô é chamado de mirobot, a
+programção das ações do mirobot pode ser feita de diversas formas, que vai
+desde a combinação dos módulos do já citado Project Bloks, até a construção
+desses comportamentos por meio de linguagens de programação como: javacript,
+python e scratch.
+
+Outra dificuldade no aprendizado de programação, além do alto nível de
+abstração ligado a computação, são também as sintaxes complexas nas linguagens
+de programação. E isso se agrava mais ainda quando a linguagem é baseada em um
+idioma no qual não é do seu conhecimento. Pensando nisso, foi que no ano de
+2011 iniciou-se no Instituto Federal de Educação, Ciências e Tecnologia do Rio
+grande do Norte (IFRN), por meio do professor Leonardo Reis Lucena e alunos
+bolsitas, a projeto da linguagem potigol. A proposta do potigol é ser uma
+linguagem de programação que tem sua sintaxe baseada no idioma português, e que
+com isso auxilie o ensino de programação para os falantes desse mesmo idioma.
+
+Esse trabalho busca juntar essas duas experiências ja citadas, de forma que
+elas possam entrar em sintonia e trazer um resultado ainda maior, levando em
+conta que elas têm o mesmo objetivo final. Dessa forma o objetivo principal do
+trabalho é permitir que exista uma alternativa além das linguagens já
+suportadas para a programação das ações do mirobot, a possibilidadede usar a
+linguagem potigol.
 
 \section{Objetivos}
 
 Nesta seção são definidos os objetivos gerais e específicos do trabalho.
 
-
 \subsection{Objetivos Gerais}
 
-Este trabalho tem por objetivo geral implementar uma biblioteca que permita programar na linguagem Potigol comportamentos de robôs Mirobot.
+Este trabalho tem por objetivo geral implementar uma biblioteca que permita
+programar na linguagem Potigol comportamentos de um robô Mirobot.
 
 \subsection{Objetivos Específicos}
 
 Fazem parte dos objetivos específicos deste trabalho:
 
-\begin{itemize}
-  \item Descrever o protocolo de troca de mensagens do robô Mirobot;
-  \item Implementar exemplo na linguagem Potigol de programação de comportamento de robôs Mirobot;
-  \item \ldots
+\begin{itemize} \item Descrever o protocolo de troca de mensagens do robô
+    Mirobot; \item Desenvolver a biblioteca mirobot-poti na linguagem de
+    progração Java; \item Implementar exemplo de utilização da biblioteca
+      Mirobot-Poti em Potigol utilizando um simulador para o robô;
 \end{itemize}
 
 
 \section{Metodologia}
 
-Na metodologia é descrito o método de investigação e pesquisa para o
-desenvolvimento e implementação do trabalho que está sendo proposto.
-
-1. Entendeu o funcionamento do robô através das ferramentas "página web" e "simulador do Mirobot"
-2. Definiu os métodos (assinaturas) de programação do robô através do estudo da implementação de biblioteca "Python"
-3. Testou a importação de bibliotecas no Potigol
-4. Implementou o exemplo de programação em potigol de comportamento do Mirobot
-5. Implementou as assinaturas
-6. Criou e testou outros exemplos
+Esse trabalho seguiu as seguintes etapas, primeiramente foram pesquisadas e
+entendidas as ferramentas já existentes desenvolvidas pela própria Google, que
+é a mesma entidade que desenvolveu o robô mirobot, entre elas estão:
+mirobot-sim, um simulador do robô mirobot escrito em javascript; mirobot-py e
+mirobot-js, que são implementações das bibliotecas para comunicação com o robô
+nas respectivas linguagens: python e javascript. Após essa etapa foram
+definidos os nomes dos métodos da biblioteca mirobot-poti que seriam
+posteriormente implementados, esses métodos são responsáveis por comandar os
+comportamentos do mirobot, essa nomeação foi feita com base nas bibliotecas já
+citadas: mirobot-py e mirobot-js. A próxima etapa foi entender como fazer a
+importação de uma biblioteca externa na linguagem potigol, a qual foi
+compreendida através de simples testes compilando códigos da linguaguem Java e
+importando o resultado em códigos no potigol. Depois do sucesso da validação
+referente a importação de uma biblioteca externa no potigol, foi feita uma
+segunda validação com o mesmo propósito, sendo que agora a tentativa de
+importação foi feita com uma biblioteca protótipo que faz uma simples
+comunicação com o simulador do mirobot. E por fim, levando como base o sucesso
+das validações já citadas, foram implementados todos os métodos anteriormente
+nomeados e criado um exemplo de uso da utilização da biblioteca mirobot-poti.
 
 \section{Delimitação do trabalho}
 
-Devido a dificuldades na importação do robô, foi utilizado o simulador.
+Devido a dificuldades na importação do robô, foi utilizado um simulador ao
+invés do próprio robô. Por outro lado, a ausência do robô não teve grande
+impacto no desenvolvimento da biblioteca já que existia todo um ambiente pronto
+pra suportar os testes necessários.
 
 
 \section{Organização do trabalho}
 
-Nesta seção deve ser apresentado como está organizado o trabalho, sendo
-descrito, portanto, do que trata cada capítulo.
-O trabalho esta organizado na seguinte estrutura: o \hyperref[cap:introducao]{primeiro capítulo}, com uma introdução sobre o trabalho; o \hyperref[cap:refencial]{segundo capítulo} com referencial teórico utilizado, descrição da implementação e teste, considerações finais.
+O trabalho esta organizado na seguinte estrutura: o
+\hyperref[cap:introducao]{primeiro capítulo}, com uma introdução sobre o
+trabalho; o \hyperref[cap:referencial]{segundo capítulo} com referencial
+teórico utilizado relativo ao mirobot e a liguagem de programação potigol, o
+\hyperref[cap:descricao]{teceiro capítulo} que contém a descrição da
+implementação e os testes, e por fim o \hyperref[cap:consideracoes]{quarto
+capítulo} com as considerações finais do trabalho.
