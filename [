@@ -58,7 +58,7 @@ Notation).
 % Projetos que estão no Github
 
 O Mirobot é rodeado por um grande ecossistema de projetos relacionados a ele no
-repositório Github (\url{https://github.com/mirobot}), entre eles estão:
+repositório Github (\href{https://github.com/mirobot}), entre eles estão:
 \href{https://github.com/mirobot/mirobot-sim}{mirobot-sim}, que é um simulador
 que tem a função de receber as mensagens em JSON via websocket e simular a
 parte de comunicação do robô;
@@ -69,27 +69,16 @@ bibliotecas para o controle do mirobot para as respectivas linguagens: python,
 javascript e scratch.
 
 Além dos projetos no Github ainda existe uma gama de aplicativos web com
-plataformas de interação com o mirobot, podem ser encotradas em:
-\url{http://apps.mirobot.io/}. Para cada uma das linguagens de programação já
+plataformas de interação com o mirobot, são encotradas em:
+\hef{http://apps.mirobot.io/}. Para cada uma das linguagens de programação já
 citadas há uma aplicação web que possibilita comunicão com o robô, em todas
 essas aplicações, além da possibilidade de se conectar com o robô físico e
 enviar os comandos, é possível acompanhar o seu trajeto por meio de um
 simulador.  Ainda existe outros aplicativos relacionados comunicação com o
-mirobot, entre eles estão: point \& click, que é uma interface para definir o
-trajeto do mirobot apenas usando clicks na tela de um simulador; e remote
-control, que atua como um remoto possibilitando o envio das ações para o
-mirobot por meio de botões na interface web.
+mirobot, entre eles estão: point & click, uma interface para definir o trajeto
+do mirobot apenas por clicks; e remote control, que serve de controle remoto e
+é possivel enviar as ações para o mirobot por meio de botões na interface web.
 
 \section{Linguagem Potigol uma linguagem em português para o ensino de lógica
 de programação de computadores}
 \label{sec:potigol}
-
-No ano de 2011 no Instituto Federal de Educação, Ciências e Tecnologia (IFRN),
-Campi Natal/Central (CNAT), foi iniciado o projeto da linguagem de programação
-Potigol pelo professor Leonardo Reis Lucena e alunos bolsistas. A linguagem
-nasceu com a proposta principal de auxiliar o ensino das disciplinas de
-programação de computadores, e leva como principal característica a sua sintaxe
-em português. Entre algumas outras caracteristicas da linguagem estão: suporte
-a multiparadigma, tipagem estática com inferência de tipos, projetada para ser
-usada por alunos iniciantes.
-
