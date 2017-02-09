@@ -15,38 +15,47 @@
 % objetivos do trabalho, propostos inicialmente.
 
 Com a término da fase de desenvolvimento desse trabalho foi possível alcançar o
-objetivo geral de desenvolver uma biblioteca para programar comportamentos de
-um robô mirobot em potigol. Em relação aos objetivos específicos, todos foram
-alcançados como no planjeado: foi descrito o protocolo usado no mirobot,
+objetivo geral, permitir programar comportamentos de
+um robô mirobot em linguagem potigol. 
+Em relação aos objetivos específicos, todos foram
+alcançados como o planjeado: foi descrito o protocolo usado no mirobot,
 desenvolvido a biblioteca mirobot-poti e implementado um exemplo em potigol do
-uso da biblioteca. O produto desse trabalho foi a biblioteca que aumenta as
-possíbilidades de linguagens que podem ser utilizadas para programar
-comportamentos do mirobot, só que com o detalhe que o potigol oferece um
-recurso diferencial, que é a vantagem de uso do potigol por parte de pessoas
-que falam português mas não entendem o inglês.
+uso da biblioteca.
 
 
 \section{Principais contribuições}
 
-\section{Limitações}
+A contribuição pessoal foi no aprendizado de novas tecnologias, tais como: o websocket, desenvolvimento de uma biblioteca na liguagem java e o contato com a linguagem potigol. Além da oportunidade de interagir com novas áreas como foi o caso da programação tangível. 
 
-A principal limitação que foi enfrentada, além da ausência do robô físico para
-os testes, foi que a biblioteca mirobot-poti não foi implementada com noção de
-threads diferente da mirobot-py. Por causa dessa limitação não foi possível
-implementar a noção da fila de comandos que deveria ser controlada pela
-pela próprio biblioteca mirobot-poti.
+A principal contribuição para o projeto Potigol é permitir criar uma "sala de aula" mais interativa.
+Os alunos irão programar em uma linguagem em português comportamentos de um robô, tal como desenvolver a lógica para desenho de um quadrado e de outros objetos geométricos mais complexos.
+
+\section{Limitações e dificuldades}
+
+A limitação principal do projeto foi a ausência de robô para teste real devido a problema na importação do equipamento.
+Além da ausência do robô físico para
+os testes, uma outra limitação foi que a biblioteca mirobot-poti não foi implementada com uso de
+threads. Uma biblioteca que usou threads foi a mirobot-py.
+Por causa dessa limitação, todos os comportamentos são síncronos, não sendo possível o enfileiramento de comandos controlados pela própria biblioteca mirobot-poti.
+
+Um obstáculo no projeto foi entender como o Potigol usa bibliotecas externas e assim poder fazer o mirobot-poti uma alternativa no ensino, Ou seja, integrar na programação a biblioteca apenas quando necessário.
+Foram realizadas algumas interações com a equipe do projeto Potigol para que a biblioteca fosse usada apenas especificando como biblioteca externa (uso de \textit{classpath}). 
+
+Ficou o \textit{bug} na saída dos comandos com o uso específico do comando java -cp potigol.jar:mirobot.jar:. br.edu.ifrn.potigol.Principal -w UsandoMirobot.poti, que resultou na mensagem: \textit{aguarde...}, após um tempo a mensagem era apagada e não tinha nenhum resultado de sucesso nem de erro.
+
+%% não lembro o comando... tem de ver no trello
 
 
 \section{Trabalhos futuros}
 
-Ainda há uma grande necessidade da adoção novas estratégias e metodologias no
-ensino de assuntos que são levados como difíceis e complexos, como é o exemplo
-da programação de computadores. O mirobot-poti é apenas um passo para que se
-alcance a possibilidade de existir a programação tangível como forma
-alternativa de ensino no brasil. Algumas possibilidades de continuar a
-desenvolver nessa área são: o desenvolvimento de um rôbo similar ao mirobot de
-baixo custo e complexidade de forma que seja acessível a qualquer um
-construí-lo, e desenvolver uma alternativa acessível para programação tangível
-com blocos. Como forma de continuídade do trabalho que foi desenvolvido, há a
-possibilidade de desenvolver um terminal que consiga enviar os comandos ao
-mirobot interativamente. 
+A partir deste trabalho, existem algumas possibilidades de continuação no desenvolvimento de software, desenvolvimento de rôbos bem como na avaliação do ensino de programação.
+Quanto ao desenvolvimento de software, é possível destacar:
+
+\begin{itemize}
+    \item Desenvolvimento de um \textit{shell} permita enviar comandos diretamente ao um mirobot, mirobot-poti-shell;
+    \item Extensão do mirobot-poti-shell para permitir comandos potigol, inclusive a carga de bibliotecas em tempo de execução;
+    \item Desenvolver outras bibliotecas que permitam manipulação de outros rôbos, como por exemplo o rôbo músico do Google ou carros rôbos usados nas olimpíadas de robótica nacionais.
+\end{itemize}
+
+
+No processo de ensino de programação, é importante fazer testes controlados em laboratório para avaliar a efetividade do uso de potigol para manipular o rôbo assim como para o desenvolvimento de lógica de programação.

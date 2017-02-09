@@ -2,45 +2,41 @@
 \chapter{Introdução}
 \label{cap:introducao}
 
-Atualmente o ensino de programação voltado aos jovens e crianças vêm ganhando
-espaço em praticamente todo o mundo, por outro lado existe a fama da alta
-complexidade envolvida com esse assuntos. Por causa dessa alta complexidade
-nasceu uma grande necessidade pela criação de metodologias e estratégias mais
-eficientes para um ensino de programação.  Nesse meio de busca de novas
-estratégias de ensino de programação, nasceu a programação tangível que busca
-contornar os problemas da alta complexidade ligada à informática, com o príncio
-de modificar a forma de programar, que normalmente é usando recursos virutais e
-intocáveis, por meio  de objetos que podem ser tocados e vistos no mundo real.
+Atualmente o ensino de programação e robótica voltado aos jovens e crianças vêm
+ganhando espaço em praticamente todo o mundo, por outro lado existe a fama da
+alta complexidade envolvida com esses dois assuntos. Por causa dessa alta
+complexidade pesquisadores e professores procuraram metodologias e
+estratégias diferentes para um ensino de programação bem como de robótica.
+Uma das novas estratégias de ensino programação é baseada na
+programação tangível~\cite{Horn2007} que busca contornar os problemas da alta complexidade ligada à informática, com o príncio de modificar a forma de programar que
+normalmente é usando recursos virutais e intocáveis, por objetos que podem ser
+tocados e vistos no mundo real.
 
-Seguindo o princípio da programação tangível, a Google criou uma platarforma
-que inclui um projeto que possibilita a criação de programas através da
-combinação de pequenos módulos no formato de blocos que se encaixam, onde cada
-bloco tem um comportamento especifico e podem ser combinados de diversas formas
-produzindo novos comportamentos mais complexos, esse projeto foi nomeado de
-Project Bloks. Dentro dessa mesma plataforma existe também um pequeno robô que
-consegue produzir desenhos usando uma caneta através de comandos, esse robô é
-chamado de mirobot, a programção das ações do mirobot pode ser feita de
-diversas formas, que vai desde a combinação dos módulos do já citado Project
-Bloks, até a construção desses comportamentos por meio de linguagens de
-programação como: javascript, python e scratch.
+
+O Google mantém uma plataforma baseada na programação tangível chamada de \textit{Project Blocks} (\hyperref[https://projectbloks.withgoogle.com]{https://projectbloks.withgoogle.com}) 
+que possibilita a criação de programas através da
+combinação de pequenos módulos no formato de blocos que se encaixam. 
+Cada bloco tem um comportamento específico e pode ser combinado de divevsas formas
+produzindo novos comportamentos mais complexos.
+Dentro dessa mesma plataforma também existe um pequeno robô que consegue produzir desenhos usando uma caneta, chamado de mirobot. A programção das ações do mirobot pode ser feita de diversas formas, que vai desde a combinação dos módulos dos já citados blocos do Project Bloks, até a construção
+desses comportamentos por meio de linguagens de programação como: JavaScript,
+Python e Scratch.
 
 Outra dificuldade no aprendizado de programação, além do alto nível de
-abstração ligado a computação, são também as sintaxes complexas nas linguagens
-de programação. Isso se agrava mais ainda quando a linguagem é baseada em um
-idioma no qual não é do conhecimento da estudante. Pensando nisso, foi que no
-ano de 2011 iniciou-se no Instituto Federal de Educação, Ciências e Tecnologia
-do Rio grande do Norte (IFRN), por meio do professor Leonardo Reis Lucena e
-alunos bolsitas, a projeto da linguagem potigol. A proposta do potigol é ser
-uma linguagem de programação que tem sua sintaxe baseada no idioma português, e
-que com isso auxilie o ensino de programação para os falantes desse mesmo
-idioma.
+abstração ligado a computação, é as sintaxes complexas nas linguagens
+de programação. Principalmente quando a linguagem de programação é baseada em um
+idioma diferente da língua mãe dos alunos. Pensando nisso, foi que no ano de
+2011 iniciou-se no Instituto Federal de Educação, Ciências e Tecnologia do Rio
+grande do Norte (IFRN), por meio do professor Leonardo Reis Lucena e alunos
+bolsitas, a projeto da linguagem Potigol~\cite{potigol}. A proposta do Potigol é ser uma
+linguagem de programação que tem sua sintaxe baseada no idioma português, multiparadigma, com suporte de softwares para o ensino de programação dos falantes desse mesmo idioma.
 
-Esse trabalho busca juntar essas duas experiências ja citadas, de forma que
-elas possam entrar em sintonia e trazer um resultado ainda maior, levando em
-conta que elas têm o mesmo objetivo final. Dessa forma o objetivo principal do
+Esse trabalho busca juntar essas duas experiências já citadas, de forma que
+elas possam entrar em sintonia, levando em
+conta que elas têm o mesmo objetivo final, auxilar no ensino de programação. 
+Dessa forma o objetivo principal do
 trabalho é permitir que exista uma alternativa além das linguagens já
-suportadas para a programação das ações do mirobot, a possibilidadede usar a
-linguagem potigol.
+suportadas para a programação das ações do mirobot.
 
 \section{Objetivos}
 
@@ -53,9 +49,11 @@ programar na linguagem Potigol comportamentos de um robô Mirobot.
 
 Fazem parte dos objetivos específicos deste trabalho:
 
-\begin{itemize} \item Descrever o protocolo de troca de mensagens do robô
-    Mirobot; \item Desenvolver a biblioteca mirobot-poti na linguagem de
-    progração Java; \item Implementar exemplo de utilização da biblioteca
+\begin{itemize}
+  \item Descrever o protocolo de troca de mensagens do robô Mirobot;
+  \item Desenvolver a biblioteca mirobot-poti na linguagem de
+    progração Java;
+  \item Implementar exemplo de utilização da biblioteca
       Mirobot-Poti em Potigol utilizando um simulador para o robô;
 \end{itemize}
 
@@ -63,29 +61,29 @@ Fazem parte dos objetivos específicos deste trabalho:
 \section{Metodologia}
 
 Esse trabalho seguiu as seguintes etapas, primeiramente foram pesquisadas e
-entendidas as ferramentas já existentes desenvolvidas pela mesma entidade que
-desenvolveu o robô mirobot, entre elas estão: mirobot-sim, um simulador do robô
-mirobot escrito em javascript; mirobot-py e mirobot-js, que são implementações
-das bibliotecas para comunicação com o robô nas respectivas linguagens: python
-e javascript. Após essa etapa foram definidos os nomes dos métodos da
-biblioteca mirobot-poti que seriam posteriormente implementados, esses métodos
-são responsáveis por comandar os comportamentos do mirobot, essa nomeação foi
-feita com base nas bibliotecas já citadas: mirobot-py e mirobot-js. A próxima
-etapa foi entender como fazer a importação de uma biblioteca em java na
-linguagem potigol, a qual foi compreendida através de simples testes compilando
-códigos da linguaguem Java e importando o resultado em códigos no potigol.
-Depois do sucesso da validação referente a importação de uma biblioteca externa
-no potigol, foi feita uma segunda validação com o mesmo propósito, sendo que
-agora a tentativa de importação foi feita com uma biblioteca protótipo que faz
-uma simples comunicação com o simulador do mirobot. E por fim, levando como
-base o sucesso das validações já citadas, foram implementados todos os métodos
-anteriormente nomeados e criado um exemplo de uso da utilização da biblioteca
-mirobot-poti.
+entendidas as ferramentas já existentes desenvolvidos pelo Google, entre elas estão:
+mirobot-sim, um simulador do robô mirobot escrito em javascript; mirobot-py e
+mirobot-js, que são implementações das bibliotecas para comunicação com o robô
+nas respectivas linguagens: python e javascript. 
+Após essa etapa foram
+definidos os nomes dos métodos da biblioteca mirobot-poti que seriam
+posteriormente implementados, esses métodos são responsáveis por comandar os
+comportamentos do mirobot, essa nomeação foi feita com base nas bibliotecas já
+citadas: mirobot-py e mirobot-js.
+A próxima etapa foi entender como fazer a
+importação de uma biblioteca externa na linguagem potigol, a qual foi
+compreendida através de simples testes compilando códigos da linguaguem Java e
+importando o resultado em códigos no potigol. 
+Depois foi feita uma
+segunda validação com a biblioteca fazendo uma simples
+comunicação com o simulador do mirobot. 
+E por fim, foram implementados todos os métodos anteriormente
+nomeados e criado um exemplo de uso da utilização da biblioteca mirobot-poti.
 
 \section{Delimitação do trabalho}
 
 Devido a dificuldades na importação do robô, foi utilizado um simulador ao
-invés do próprio robô. Por outro lado, a ausência do robô não teve grande
+invés do próprio robô. Por outro lado, a ausência do robô não teve 
 impacto no desenvolvimento da biblioteca já que existia todo um ambiente pronto
 pra suportar os testes necessários.
 
