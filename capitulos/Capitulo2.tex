@@ -8,23 +8,23 @@ programação}
 
 Um dos principais objetivos da programação tangível é tornar o que é complexo e
 virutal em algo simples que pode ser visto e manuseado facilmente no mundo
-real~\cite{Horn2008, Horn2007, McNerney2000}. Esse mesmo pensamento pode ser extendido da seguinte forma: durante o aprendizado de programação é comum que os alunos apliquem seus
+real~\cite{Horn2008, Horn2007, McNerney2000}. Esse mesmo pensamento pode ser estendido da seguinte forma: durante o aprendizado de programação é comum que os alunos apliquem seus
 conhecimentos para manipular recursos virtuais como: números, cadeias de
 caracteres (strings) e valores booleanos. 
 Como forma de alternativa ao uso dos
 objetos virtuais, existe a possibilidade de se usar robôs e programar as suas
 ações. 
-Tenta-se com isso tornar mais intuítivo para visualizar e aprender a
-lógica de programação, principalmente para crianças, pois o resultado dos
+Tenta-se com isso tornar mais intuitivo para visualizar e aprender a
+lógica de programação, principalmente para crianças, pois os resultados dos
 seus programas serão mostrados em um mundo real e não em uma tela de computador.
 
-Devido a esse cenário a empresa Google desenvolveu o Mirobot, que consiste em um robô
-que suas ações podem ser programados através de diversas alternativas, como as
-linguaguens de programação: scratch, javascript e python, além de um módulo que
-também implementa a noção de progamação tangível chamado \textit{Project Bloks}. 
+Devido a esse cenário, a empresa Google desenvolveu o Mirobot. O Mirobot é em um robô
+cujas ações podem ser programadas tanto através das
+linguagens de programação: Scratch, Javascript e Python; como também através um módulo que
+também implementa a noção de programação tangível chamado \textit{Project Bloks}. 
 A proposta do mirobot é ser um robô que recebe comandos de uma determinada fonte
-via Wi-Fi e ao decorrer dessas ações ele vai marcando o seu trajeto com uma
-caneta resultando em um desenho.
+via Wi-Fi e ao realizar essas ações ele vai marcando o seu trajeto com uma
+caneta, resultando em um desenho.
 Entre as principais ações que ele realiza
 estão: se movimentar para frente ou para atrás, girar para esquerda ou para
 direita, descer ou levantar a caneta (possibilitando com que ele desenhe ou não
@@ -49,18 +49,18 @@ Na parte de controle
 ele contém um arduíno nano responsável pelo acionamento dos motores, e a
 comunicação via Wi-Fi e o tratamento dos dados fica por conta de um controlador
 principal, o qual é desenvolvido pela mesma empresa do mirobot.
-Todo esse projeto é mantido em um repositório no portal Github nos endereços: chassi em \href{https://github.com/mirobot/mirobot-chassis}{https://github.com/mirobot/mirobot-chassis}; firmware arduino em \href{https://github.com/mirobot/mirobot-arduino}{https://github.com/mirobot/mirobot-arduino} e o firmware wifi em \href{https://github.com/mirobot/mirobot-wifi}{https://github.com/mirobot/mirobot-wifi}.
-
 
 % parágrafo para explicar a parte comunicação do mirobot.
 % software websocket
 A comunicação com o Mirobot é feita via Wi-Fi e ele trabalha com a tecnologia
-chamada websocket~\cite{websocket2011}. O websocket consiste em uma tecnologia que oferece um meio
+chamada websocket ~\cite{websocket2011}. O websocket consiste em uma tecnologia que oferece um meio
 de comunicação bidirecional através de um único soquete, essa tecnologia
 normalmente é usada em browsers web e servidores web. 
 As mensagens que são
 enviadas e recebidas pelo Mirobot estão no formado JSON (Javascript Object
 Notation).
+
+Todo esse projeto é mantido em um repositório no portal Github nos endereços: chassi em \url{https://github.com/mirobot/mirobot-chassis}; firmware arduino em \url{https://github.com/mirobot/mirobot-arduino} e o firmware wifi em \url{https://github.com/mirobot/mirobot-wifi}.
 
 \subsection{Códigos e projetos do Mirobot}
 \label{subsec:mirobotcodigos}
@@ -71,23 +71,20 @@ O Mirobot é rodeado por um grande ecossistema de projetos relacionados a ele no
 repositório Github (\url{https://github.com/mirobot}), entre eles estão:
 
 \begin{itemize}
-    \item \href{https://github.com/mirobot/mirobot-sim}{mirobot-sim}, que é um simulador
+    \item \textit{mirobot-sim}, que é um simulador
 que tem a função de receber as mensagens em JSON via websocket e simular a
 parte de comunicação do robô;
-    \item \href{https://github.com/mirobot/mirobot-py}{mirobot-py},
-\href{https://github.com/mirobot/mirobot-js}{mirobot-js} e
-\href{https://github.com/mirobot/mirobot-scratch}{mirobot-scratch} que são
-bibliotecas para o controle do mirobot para as respectivas linguagens python,
-javascript e scratch
+    \item \textit{mirobot-py}, \texit{mirobot-js} e \texit{mirobot-scratch} que são
+bibliotecas para o controle do mirobot para as respectivas linguagens Python,
+Javascript e Scratch;
 \end{itemize}
 
 Além dos projetos no Github ainda existe uma gama de aplicativos web com
-plataformas de interação com o mirobot, podem ser encotradas em:
-\url{http://apps.mirobot.io/}. Para cada uma das linguagens de programação já
-citadas há uma aplicação web que possibilita comunicão com o robô, em todas
+plataformas de interação com o mirobot, podem ser encontradas em:
+\url{http://apps.mirobot.io/}. Para cada uma das linguagens de programação há uma aplicação web que possibilita comunicação com o robô, em todas
 essas aplicações, além da possibilidade de se conectar com o robô físico e
 enviar os comandos, é possível acompanhar o seu trajeto por meio de um
-simulador.  Ainda existe outros aplicativos relacionados comunicação com o
+simulador.  Ainda existem outros aplicativos relacionados a comunicação com o
 mirobot, entre eles estão: point \& click, que é uma interface para definir o
 trajeto do mirobot apenas usando clicks na tela de um simulador; e remote
 control, que atua como um remoto possibilitando o envio das ações para o
@@ -102,11 +99,11 @@ Campi Natal/Central (CNAT), foi iniciado o projeto da linguagem de programação
 Potigol pelo professor Leonardo Reis Lucena e alunos bolsistas. A linguagem
 nasceu com a proposta principal de auxiliar o ensino das disciplinas de
 programação de computadores, e leva como principal característica a sua sintaxe
-em português. Entre algumas outras caracteristicas da linguagem estão: suporte
-a multiparadigma, tipagem estática com inferência de tipos, projetada para ser
+em português. Entre algumas outras características da linguagem estão: multiparadigma, tipagem estática com inferência de tipos, projetada para ser
 usada por alunos iniciantes.
 
-Atualmente a linguagem Potigol com tutorial e seus softwares utilitários estão disponíveis em~\hyperef{http://potigol.github.io} e seus projetos com seus códigos-fontes em~\hyperef{https://github.com/potigol/}.
+Atualmente a linguagem Potigol com tutorial e seus softwares utilitários estão disponíveis em \url{http://potigol.github.io} e seus projetos com seus códigos-fontes em \url{https://github.com/potigol/}.
 
+%% Adicionar exemplo do potigol.
 %% falta as referências sobre o potigol
 %% 

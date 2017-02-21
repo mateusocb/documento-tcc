@@ -1,5 +1,5 @@
 % Consideracoes finais
-\chapter{Considerações finais}
+\chapter{Considerações Finais}
 \label{cap:consideracoes}
 
 
@@ -14,31 +14,31 @@
 % e na discussão do texto, contendo deduções lógicas correspondentes aos
 % objetivos do trabalho, propostos inicialmente.
 
-Com a término da fase de desenvolvimento desse trabalho foi possível alcançar o
+Com o término da fase de desenvolvimento desse trabalho foi possível alcançar o
 objetivo geral, permitir programar comportamentos de
-um robô mirobot em linguagem potigol. 
+um robô mirobot na linguagem Potigol. 
 Em relação aos objetivos específicos, todos foram
-alcançados como o planjeado: foi descrito o protocolo usado no mirobot,
-desenvolvido a biblioteca mirobot-poti e implementado um exemplo em potigol do
+alcançados como o planejado: foi descrito o protocolo usado no mirobot,
+desenvolvido a biblioteca mirobot-poti e implementado um exemplo em Potigol do
 uso da biblioteca.
 
 
 \section{Principais contribuições}
 
-A contribuição pessoal foi no aprendizado de novas tecnologias, tais como: o websocket, desenvolvimento de uma biblioteca na liguagem java e o contato com a linguagem potigol. Além da oportunidade de interagir com novas áreas como foi o caso da programação tangível. 
+A contribuição pessoal foi no aprendizado de novas tecnologias, tais como: o websocket, desenvolvimento de uma biblioteca na liguagem Java e o contato com a linguagem Potigol. Além da oportunidade de interagir com novas áreas como foi o caso da programação tangível. 
 
-A principal contribuição para o projeto Potigol é permitir criar uma "sala de aula" mais interativa.
+A principal contribuição para o projeto Potigol é permitir criar uma ``sala de aula'' mais interativa.
 Os alunos irão programar em uma linguagem em português comportamentos de um robô, tal como desenvolver a lógica para desenho de um quadrado e de outros objetos geométricos mais complexos.
 
 \section{Limitações e dificuldades}
 
-A limitação principal do projeto foi a ausência de robô para teste real devido a problema na importação do equipamento.
+A limitação principal do projeto foi a ausência de robô para teste real devido a um problema na importação do equipamento.
 Além da ausência do robô físico para
 os testes, uma outra limitação foi que a biblioteca mirobot-poti não foi implementada com uso de
 threads. Uma biblioteca que usou threads foi a mirobot-py.
 Por causa dessa limitação, todos os comportamentos são síncronos, não sendo possível o enfileiramento de comandos controlados pela própria biblioteca mirobot-poti.
 
-Um obstáculo no projeto foi entender como o Potigol usa bibliotecas externas e assim poder fazer o mirobot-poti uma alternativa no ensino, Ou seja, integrar na programação a biblioteca apenas quando necessário.
+Um obstáculo no projeto foi entender como o Potigol usa bibliotecas externas e assim poder fazer o mirobot-poti uma alternativa no ensino, ou seja, integrar na programação a biblioteca apenas quando necessário.
 Foram realizadas algumas interações com a equipe do projeto Potigol para que a biblioteca fosse usada apenas especificando como biblioteca externa (uso de \textit{classpath}). 
 
 Ficou o \textit{bug} na saída dos comandos com o uso específico do comando java -cp potigol.jar:mirobot.jar:. br.edu.ifrn.potigol.Principal -w UsandoMirobot.poti, que resultou na mensagem: \textit{aguarde...}, após um tempo a mensagem era apagada e não tinha nenhum resultado de sucesso nem de erro.
@@ -54,8 +54,8 @@ Quanto ao desenvolvimento de software, é possível destacar:
 \begin{itemize}
     \item Desenvolvimento de um \textit{shell} permita enviar comandos diretamente ao um mirobot, mirobot-poti-shell;
     \item Extensão do mirobot-poti-shell para permitir comandos potigol, inclusive a carga de bibliotecas em tempo de execução;
-    \item Desenvolver outras bibliotecas que permitam manipulação de outros rôbos, como por exemplo o rôbo músico do Google ou carros rôbos usados nas olimpíadas de robótica nacionais.
+    \item Desenvolver outras bibliotecas que permitam manipulação de outros robôs, como por exemplo o robô músico do Google ou carros robôs usados nas olimpíadas de robótica nacionais.
 \end{itemize}
 
 
-No processo de ensino de programação, é importante fazer testes controlados em laboratório para avaliar a efetividade do uso de potigol para manipular o rôbo assim como para o desenvolvimento de lógica de programação.
+No processo de ensino de programação, é importante fazer testes controlados em laboratório para avaliar a efetividade do uso de potigol para manipular o robô assim como para o desenvolvimento de lógica de programação.
